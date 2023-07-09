@@ -1,0 +1,811 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #555;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2.5rem;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"],
+legend {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0%,
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+
+  50% {
+    -ms-filter: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0)
+      format("embedded-opentype"),
+    url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"),
+    url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),
+    url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"),
+    url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+.fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right,
+.pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.pull-left {
+  float: left;
+}
+
+.fa.pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.pull-right {
+  margin-left: 0.3em;
+}
+
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-rotate-90 {
+  filter: none;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+@font-face {
+  font-family: devicon;
+  src: url(../fonts/devicon.eot?-hdf3wh);
+  src: url(../fonts/devicon.eot?#iefix-hdf3wh) format("embedded-opentype"),
+    url(../fonts/devicon.woff?-hdf3wh) format("woff"),
+    url(../fonts/devicon.ttf?-hdf3wh) format("truetype"),
+    url(../fonts/devicon.svg?-hdf3wh#devicon) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class*=" devicon-"],
+[class^="devicon-"] {
+  font-family: devicon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  margin-top: 1em;
+  padding-top: 1em;
+  line-height: 1.25;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 40px;
+}
+
+figure,
+ol,
+p,
+ul {
+  margin: 1em 0;
+}
+
+a img {
+  border: 0;
+}
+
+#particles-js {
+  background: red;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, coral, red);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, coral, red);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#particles-js .particles-js-canvas-el {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.header {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header .site-title {
+  font-size: 35px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+}
+
+@media only screen and (min-width: 550px) {
+  .header .site-title {
+    margin: 0;
+    font-size: 100px;
+  }
+}
+
+.header .site-description {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 550px) {
+  .header .site-description {
+    font-size: 40px;
+  }
+}
+
+.header-links {
+  margin: 10px;
+}
+
+.header-links .link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 550px) {
+  .header-links .link {
+    font-size: 20px;
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.down,
+.header-icons .icon {
+  color: #fff;
+  text-align: center;
+}
+
+.header-icons .icon {
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: all 0.7s;
+  width: 20px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.header-icons .icon:active,
+.header-icons .icon:hover {
+  color: #1488cc;
+  background: #fff;
+}
+
+@media only screen and (min-width: 550px) {
+  .header-icons .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+  }
+}
+
+.down {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.down .icon {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  -webkit-animation: pulse 1.3s infinite;
+  animation: pulse 1.3s infinite;
+}
+
+.down .icon:active,
+.down .icon:hover,
+.footer a:active,
+.footer a:hover {
+  color: #4b5664;
+}
+
+#about {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+@media only screen and (min-width: 550px) {
+  #about {
+    width: 80%;
+  }
+}
+
+.tech {
+  margin: 10px;
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user p {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 550px) {
+  .user {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  text-align: center;
+  margin: 5px auto;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 550px) {
+  #projects {
+    width: 80%;
+  }
+}
+
+.user-projects {
+  margin: 20px auto;
+}
+
+.user-projects img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.user-projects h5 {
+  margin: 0;
+}
+
+.user-projects li {
+  color: coral;
+  font-size: 1.1rem;
+}
+
+.user-projects p {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 550px) {
+  .contents {
+    margin-left: 0;
+    width: 48%;
+  }
+
+  .contents,
+  .contents-right {
+    margin-top: -5%;
+  }
+
+  .contents-right,
+  .images-right {
+    float: right;
+    width: 48%;
+  }
+
+  .images-right img {
+    float: right;
+  }
+
+  .images-left {
+    float: left;
+    width: 48%;
+  }
+
+  .images-left img {
+    float: left;
+  }
+}
+
+.project-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px;
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 10px;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
+}
+
+.project-link:active,
+.project-link:hover {
+  background-color: crimson;
+  border-color: crimson;
+  color: #fff;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+}
+
+.footer {
+  background: red;
+  background: -webkit-linear-gradient(to right, coral, red);
+  background: linear-gradient(to right, coral, red);
+  padding: 10px 0;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .love {
+  color: red;
+}
+
+.footer a {
+  text-decoration: none;
+  margin: 0;
+  color: black;
+}
