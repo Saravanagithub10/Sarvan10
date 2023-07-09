@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav {
+  background-color: wheat;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: green;
+  text-decoration: none;
+  margin: 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+}
+.end {
+  background-color: wheat;
+}
+
+footer {
+  background-color: #c6cb91;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.head-1 {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.head-2 {
+  text-align: center;
+  background-color: green;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+input {
+  background-color: green;
+  font-size: 30px;
+  align-items: center;
+}
+.banner {
+  background-color: wheat;
+}
+.banner1 {
+  font-size: 40px;
+}
+.banner2 {
+  font-size: 40px;
+}
+.banner3 {
+  font-size: 40px;
+}
+.food-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+}
+.food-image-1 {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+}
