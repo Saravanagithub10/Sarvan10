@@ -1,0 +1,50 @@
+/* Add your styles here */
+body {
+  background-image: url("./Images/Free\ \ Books\,\ Retro\,\ Library\ Background\ Images\,\ Books\ Background\ Photo\ Background\ PNG\ and\ Vectors.jpeg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: unset;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.hero-section {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.login-section {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  max-width: 300px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+footer {
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+}
