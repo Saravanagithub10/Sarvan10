@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e08282;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar li {
+  margin: 10px;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar.scrolled {
+  background-color: #b24f4f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

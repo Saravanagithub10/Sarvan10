@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #ff6600;
+  font-family: "Gothic", sans-serif;
+}
+
+#countdown-clock {
+  text-align: center;
+  font-size: 24px;
+  margin: 100px auto;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#countdown-clock span::after {
+  content: ".";
+  animation: blink 1s infinite;
+  opacity: 0.6;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  text-shadow: 2px 2px 4px #000;
+}
+
+#countdown-clock:hover #days,
+#countdown-clock:hover #hours,
+#countdown-clock:hover #minutes,
+#countdown-clock:hover #seconds {
+  text-shadow: 2px 2px 8px #ff6600;
+}
